@@ -2,6 +2,7 @@ import { ArtDecoSunburst } from "@/components/ArtDecoSunburst";
 import { ArtDecoDivider } from "@/components/ArtDecoDivider";
 import { ServiceCard } from "@/components/ServiceCard";
 import { CTAForm } from "@/components/CTAForm";
+import { ProductCard } from "@/components/ProductCard";
 
 function App() {
   return (
@@ -115,6 +116,56 @@ function App() {
                   <path d="M12 7v10M7 12h10" />
                 </svg>
               }
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <ArtDecoDivider variant="fan" />
+            <p className="text-primary tracking-[0.2em] uppercase text-sm mb-4">Избранное</p>
+            <h2 className="font-serif text-4xl md:text-5xl text-foreground text-balance">Эксклюзивные модели</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ProductCard
+              title="Oxford Premium"
+              price="89 900 ₽"
+              category="Классика"
+              image="https://avatars.mds.yandex.net/i?id=2a00000179f1362c6ea0b7cad2866330b18e-5234400-images-thumbs&n=13"
+            />
+            <ProductCard
+              title="Derby Elegance"
+              price="95 500 ₽"
+              category="Классика"
+              image="https://avatars.mds.yandex.net/i?id=c6407f1ec47d56c5c2cddb9e9b2743f2_l-5233145-images-thumbs&n=13"
+            />
+            <ProductCard
+              title="Loafer Luxe"
+              price="78 000 ₽"
+              category="Casual Premium"
+              image="https://avatars.mds.yandex.net/i?id=87ef37e42fb7eabb48c5147b19c51963_l-5662072-images-thumbs&n=13"
+            />
+            <ProductCard
+              title="Chelsea Master"
+              price="105 000 ₽"
+              category="Дизайнерская линия"
+              image="https://avatars.mds.yandex.net/i?id=d4a74cb1ccec4d8cbe2a4c3c06e27e67_l-5877414-images-thumbs&n=13"
+            />
+            <ProductCard
+              title="Brogue Signature"
+              price="92 000 ₽"
+              category="Классика"
+              image="https://avatars.mds.yandex.net/i?id=bf5f5f87c8e0d5e0c4a2d74a9e1e6b9f_l-4576267-images-thumbs&n=13"
+            />
+            <ProductCard
+              title="Monkstrap Elite"
+              price="115 000 ₽"
+              category="Дизайнерская линия"
+              image="https://avatars.mds.yandex.net/i?id=2a00000179ee05e29f7b42faf9f04b4f774e-5666505-images-thumbs&n=13"
             />
           </div>
         </div>
