@@ -26,7 +26,10 @@ export function ProductCard({ title, price, image, category }: ProductCardProps)
       <div className="p-6">
         <p className="text-primary text-xs tracking-[0.2em] uppercase mb-2">{category}</p>
         <h3 className="font-serif text-xl text-foreground mb-3">{title}</h3>
-        <p className="text-2xl text-primary font-medium">{price}</p>
+        <p className="text-2xl text-primary font-medium mb-4">{price}</p>
+        <button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-medium tracking-wider uppercase text-sm py-3 transition-all duration-300 border border-primary hover:shadow-lg hover:shadow-primary/20">
+          Заказать
+        </button>
       </div>
 
       {/* Bottom accent line */}
